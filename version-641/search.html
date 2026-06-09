@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索 - 日韩影视</title>
+    <meta name="description" content="日韩影视影片搜索页，支持按片名、地区、年份、类型、标签与简介检索。">
+    <meta name="keywords" content="影片搜索,经典日韩电影,在线观看,免费观看,日韩影视,日韩电视剧,高清视频,影视大全,免费播放,动人故事,视听盛宴">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-shell">
+        <a class="brand" href="index.html" aria-label="日韩影视首页">
+            <span class="brand-icon">▶</span>
+            <span class="brand-text">日韩影视</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+            <a class="nav-link" href="index.html">首页</a><a class="nav-link" href="categories.html">分类</a><a class="nav-link" href="ranking.html">排行榜</a><a class="nav-link" href="all-movies.html">全部影片</a><a class="nav-link active" href="search.html">搜索</a>
+        </nav>
+        <form class="header-search" action="search.html" method="get">
+            <input name="q" type="search" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+        <form class="mobile-search" action="search.html" method="get">
+            <input name="q" type="search" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <nav aria-label="移动导航">
+            <a class="mobile-nav-link" href="index.html">首页</a><a class="mobile-nav-link" href="categories.html">分类</a><a class="mobile-nav-link" href="ranking.html">排行榜</a><a class="mobile-nav-link" href="all-movies.html">全部影片</a><a class="mobile-nav-link active" href="search.html">搜索</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero search-hero">
+        <div>
+            <p class="section-kicker">影片搜索</p>
+            <h1>搜索你想看的影视内容</h1>
+            <p>支持按片名、地区、年份、类型、标签与简介关键词检索。</p>
+        </div>
+    </section>
+    <section class="section-shell search-page-panel">
+        <form class="search-page-form" data-search-form>
+            <input type="search" name="q" placeholder="输入关键词搜索影片" aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <div class="search-status" data-search-status>输入关键词后即可查看匹配影片。</div>
+        <div class="movie-grid" data-search-results></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-shell">
+        <div class="footer-about">
+            <a class="footer-brand" href="index.html">日韩影视</a>
+            <p>汇聚多题材影视片单，覆盖电影、剧集、综艺与纪录内容，带来清晰顺畅的静态浏览体验。</p>
+        </div>
+        <div class="footer-column">
+            <h2>快速导航</h2>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="categories.html">分类总览</a></li>
+                <li><a href="ranking.html">热门排行</a></li>
+                <li><a href="search.html">影片搜索</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>热门分类</h2>
+            <ul>
+                <li><a href="category-rihan-jingxuan.html">日韩精选</a></li><li><a href="category-jingdian-dianying.html">经典电影</a></li><li><a href="category-rebo-juji.html">热播剧集</a></li><li><a href="category-xiju-aiqing.html">喜剧爱情</a></li><li><a href="category-dongzuo-fanzui.html">动作犯罪</a></li><li><a href="category-xuanyi-jingsong.html">悬疑惊悚</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 日韩影视. 发现更多精彩影视内容。</p>
+    </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
